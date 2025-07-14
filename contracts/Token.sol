@@ -47,7 +47,6 @@ contract Token {
 		return true;
 	}
 
-
 	function _transfer(
 		address _from,
 		address _to,
@@ -90,5 +89,4 @@ contract Token {
 
 		return true;
 	}
-
 }
