@@ -43,8 +43,7 @@ describe('Token', () => {
 
     it('assigns total supply to deployer', async () => {   
       expect(await token.balanceOf(deployer.address)).to.equal(totalSupply)
-    }) 
-
+    })
   })
 
   describe('Sending Tokens', () => {
@@ -72,7 +71,6 @@ describe('Token', () => {
         expect(args.to).to.equal(receiver.address)
         expect(args.value).to.equal(amount)
       })
-
     })
 
     describe('Failure', () => {
@@ -85,9 +83,7 @@ describe('Token', () => {
         const amount = tokens(10)
         await expect(token.connect(deployer).transfer('0x0000000000000000000000000000000000000000', amount)).to.be.reverted 
       })
-
     })
-
   })
 
   describe('Approving Tokens', () => {
@@ -113,16 +109,13 @@ describe('Token', () => {
         expect(args.spender).to.equal(exchange.address)
         expect(args.value).to.equal(amount)
       })
-
     })
 
     describe('Failure', () => {
       it('rejects invalid spenders', async () => {
         await expect(token.connect(deployer).approve('0x0000000000000000000000000000000000000000', amount)).to.be.reverted
       })
-
     })
-
   })
 
   describe('Delegated Token Transfers', () => {
@@ -158,7 +151,6 @@ describe('Token', () => {
         expect(args.to).to.equal(receiver.address)
         expect(args.value).to.equal(amount)
       })
-
     })
 
     describe('Failure', () => {
@@ -166,9 +158,6 @@ describe('Token', () => {
         const invalidAmount = tokens(100000000)
         await expect(token.connect(exchange).transferFrom(deployer.address, receiver.address, invalidAmount)).to.be.reverted
       })
-
     })
-
-  })    
-
+  })
 })
