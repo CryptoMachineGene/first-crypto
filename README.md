@@ -95,8 +95,12 @@ npx hardhat run scripts/deploy.js --network sepolia
 
 - Full Test Suite — includes success and failure conditions
 
+------------------------------------------------------------------------------------------------------------------
+
 📝 License
 This project is licensed under The Unlicense — released into the public domain for free reuse and adaptation.
+
+------------------------------------------------------------------------------------------------------------------
 
 🧠 Author
 Eugene McGrath
