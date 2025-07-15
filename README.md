@@ -85,15 +85,15 @@ Deploy with:
 npx hardhat run scripts/deploy.js --network sepolia
 ```
 ✅ Features
-🔁 ERC-20 Transfers — transfer, approve, transferFrom
+- ERC-20 Transfers — transfer, approve, transferFrom
 
-🔒 Allowance Logic — secure delegation and controlled spending
+- Allowance Logic — secure delegation and controlled spending
 
-⛔ Edge Case Handling — reverts for invalid recipient or overspend
+- Edge Case Handling — reverts for invalid recipient or overspend
 
-✅ Events Emitted — Transfer and Approval for transparency
+- Events Emitted — Transfer and Approval for transparency
 
-🧪 Full Test Suite — includes success and failure conditions
+- Full Test Suite — includes success and failure conditions
 
 📝 License
 This project is licensed under The Unlicense — released into the public domain for free reuse and adaptation.
