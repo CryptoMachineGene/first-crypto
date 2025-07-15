@@ -101,7 +101,7 @@ npx hardhat run scripts/deploy.js --network sepolia
 ---
 
 📝 License
-This project is licensed under The Unlicense — released into the public domain for free reuse and adaptation.
+This project is licensed under the [**MIT License**](https://opensource.org/licenses/MIT) — open source and free to use with attribution.
 
 ---
 
